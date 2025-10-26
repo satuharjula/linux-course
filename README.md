@@ -1,2 +1,2 @@
 # Palvelinten hallinta course
-Homework reports for Linux course taught by Tero Karvinen
+Homework reports for Palvelinten hallinta course taught by Tero Karvinen
