@@ -36,6 +36,12 @@ Slave-koneita voi hallita palomuurin tai NAT:in takaa, myös tuntemattomassa oso
 
 •	Plagiointi, sepittäminen ja luvaton kuvien kopiointi ehdottomasti kielletty.
 
+## Saltin asennus Debian 13:lle
+
+Aloitin tehtävän asentamalla wget:in, jotta saan ladattua tarvittavat tiedostot. Latasin wget:in komennoilla sudo apt-get update ja sudo apt-get install wget. Seuraavaksi loin uuden kansion komennolla mkdir saltrepo/ ja siirryin siihen komennolla cd saltrepo/.
+Seuraavaksi latasin PGP-julkisen avaimen komennolla wget https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public ja salt.sources-tiedoston komennolla wget https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources.
+
+
 
 
 
