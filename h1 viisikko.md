@@ -16,11 +16,14 @@ Slave-koneita voi hallita palomuurin tai NAT:in takaa, myös tuntemattomassa oso
 
 ###	Karvinen 2006: Raportin kirjoittaminen
 
-Toistettavuus
+•	Toistettavuus 
 Kuka tahansa voi toistaa työn samassa ympäristössä samalla lopputuloksella.
-Täsmällisyys
-Työvaiheet tulee kertoa tarkasti, millä komennolla ja milloin. 
-Onnistumiset ja epäonnistumiset tulee kirjata ylös.
-Raportin kirjoitus menneessä aikamuodossa.
+
+•	Täsmällisyys
+	  Työvaiheet tulee kertoa tarkasti, millä komennolla ja milloin. 
+	  Onnistumiset ja epäonnistumiset tulee kirjata ylös.
+  	Raportin kirjoitus menneessä aikamuodossa.
+
+
 
 
