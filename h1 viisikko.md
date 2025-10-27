@@ -59,6 +59,27 @@ Ajoin komennon sudo salt-call –local -l info state.single pkg.installed tree.
 Ajoin komennon sudo salt-call - -local state.single file.managed /tmp/kokeilu, joka varmisti, että tiedosto on olemassa. 
 <img width="544" height="377" alt="image" src="https://github.com/user-attachments/assets/47bb9ea0-4836-4b05-acf2-bc269f51f71d" />
 
+### service-tilafunktio 
+
+Ajoin komennon sudo salt-call --local -l info state.single service.running apache2 enable=True. Tulosteessa oli Result: False ja ”The named sarvice apache2 is not available”. Komento ei toiminut, koska apache2 ei ole asennettu virtuaalikoneelleni.
+<img width="609" height="228" alt="image" src="https://github.com/user-attachments/assets/756818b0-533c-46af-96f9-ff11f6afb642" />
+
+### user-tilafunktio
+Ajoin komennon sudo salt-call --local -l info state.single user.present satu. Tuloksessa lukee ”User satu is present and up to date”, eli käyttäjä on jo olemassa, joten Salt ei tehnyt muutoksia ja siksi Changes -kohta on tyhjä. Tämä on hyvä esimerkki idempotenssista
+<img width="547" height="188" alt="image" src="https://github.com/user-attachments/assets/b43e9c2a-2cd8-4843-b9b5-d51a10fbbd84" />
+
+### cmd-tilafunktio
+
+Ajoin komennon sudo salt-call --local -l info state.single cmd.run 'touch /tmp/test' creates="/tmp/test". 
+<img width="529" height="264" alt="image" src="https://github.com/user-attachments/assets/cadbe002-c69c-4094-aada-f12b389e56ce" />
+
+
+
+
+
+
+
+
 
 
 
