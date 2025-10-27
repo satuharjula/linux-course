@@ -70,8 +70,26 @@ Ajoin komennon sudo salt-call --local -l info state.single user.present satu. Tu
 
 ### cmd-tilafunktio
 
-Ajoin komennon sudo salt-call --local -l info state.single cmd.run 'touch /tmp/test' creates="/tmp/test". 
+Ajoin komennon sudo salt-call --local -l info state.single cmd.run 'touch /tmp/test' creates="/tmp/test". Tuloksessa “Result: True” kertoi, että ajo onnistui. “Changes” näytti, että komento ajettiin ja tiedosto /tmp/test luotiin.
 <img width="529" height="264" alt="image" src="https://github.com/user-attachments/assets/cadbe002-c69c-4094-aada-f12b389e56ce" />
+
+## Idempotentti
+
+Ajoin sudo salt-call --local -l info state.single user.present satu kahdesti. Ensimmäinen ajo varmisti käyttäjän, toisella ajolla Salt ilmoitti “User satu is present and up to date” ja Changes oli tyhjä. Tämä osoittaa idempotenssin: sama tila ei tee turhaa muutosta, kun lopputila on jo oikein.
+<img width="547" height="188" alt="image" src="https://github.com/user-attachments/assets/2bcd15bb-d51a-473f-ad41-7627eac733be" />
+
+## Lähteet
+
+Karvinen, T 2021. Install Debian on Virtualbox – Updated 2024. Luettavissa: https://terokarvinen.com/2021/install-debian-on-virtualbox/. Luettu: 27.10.2025. 
+
+Karvinen, T 20.10.2025. Install Salt on Debian 13 Trixie. Luettavissa: https://terokarvinen.com/install-salt-on-debian-13-trixie/. Luettu: 26.20.2025. 
+
+Karvinen, T 28.10.2021. Run Salt Command Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/. Luettu: 26.10.2025.
+
+Karvinen, T 2018. Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux. Luettavissa: https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/. Luettu: 26.10.2025. 
+
+SALT PROJECT 2025. Linux (DEB). Luettavissa: https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/linux-deb.html. Luettu: 24.10.2025.
+
 
 
 
