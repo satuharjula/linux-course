@@ -52,7 +52,7 @@ wget https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectK
 
 ja salt.sources-tiedoston komennolla:
 
-wget https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources. 
+wget https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources. (SALT PROJECT 2025)
 
 ### Julkisen avaimen ja salt.sources -tiedoston kopiointi
 Seuraavaksi kopioin julkisen avaimen komennolla: sudo cp public /etc/apt/keyrings/salt-archive-keyring.pgp
