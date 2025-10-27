@@ -47,6 +47,21 @@ Tämän jälkeen päivitin komennolla sudo apt-get update ja asensin Saltin kome
 
 <img width="608" height="73" alt="image" src="https://github.com/user-attachments/assets/7ec99b4f-dc8e-4a28-a55c-276724584c5d" />
 
+## Saltin viisi tärkeintä tilafunktiota
+
+### pkg-tilafunktio
+
+Ajoin komennon sudo salt-call –local -l info state.single pkg.installed tree.
+<img width="541" height="277" alt="image" src="https://github.com/user-attachments/assets/54ee41e7-fc1d-40c9-8912-8ee8adc2af98" />
+
+### file-tilafunktio
+
+Ajoin komennon sudo salt-call - -local state.single file.managed /tmp/kokeilu, joka varmisti, että tiedosto on olemassa. 
+<img width="544" height="377" alt="image" src="https://github.com/user-attachments/assets/47bb9ea0-4836-4b05-acf2-bc269f51f71d" />
+
+
+
+
 
 
 
