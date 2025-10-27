@@ -38,6 +38,8 @@ Slave-koneita voi hallita palomuurin tai NAT:in takaa, myös tuntemattomassa oso
 
 ## Saltin asennus Debian 13:lle
 Tehtävässä mukailtu (Karvinen 2025) ohjeita.
+
+### PGP-julkisen avaimen ja salt sources -tiedoston lataus
 Aloitin tehtävän asentamalla wget:in, jotta saan ladattua tarvittavat tiedostot. 
 Latasin wget:in komennoilla sudo apt-get update ja sudo apt-get install wget.
 Seuraavaksi loin uuden kansion komennolla mkdir saltrepo/ ja siirryin siihen komennolla cd saltrepo/.
@@ -59,7 +61,7 @@ sudo cp salt.sources /etc/apt/sources.list.d/.
 
 Nämä siksi, että Saltin paketit voidaan hakea ja varmentaa automaattisesti.
 
-
+### Salt -asennus
 Tämän jälkeen päivitin komennolla:
 
 sudo apt-get update
