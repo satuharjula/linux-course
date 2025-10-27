@@ -42,7 +42,11 @@ Aloitin tehtävän asentamalla wget:in, jotta saan ladattua tarvittavat tiedosto
 Latasin wget:in komennoilla sudo apt-get update ja sudo apt-get install wget.
 Seuraavaksi loin uuden kansion komennolla mkdir saltrepo/ ja siirryin siihen komennolla cd saltrepo/.
 
-Seuraavaksi latasin PGP-julkisen avaimen komennolla wget https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public ja salt.sources-tiedoston komennolla wget https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources. 
+Seuraavaksi latasin PGP-julkisen avaimen komennolla 
+
+wget https://packages.broadcom.com/artifactory/api/security/keypair/SaltProjectKey/public 
+
+ja salt.sources-tiedoston komennolla wget https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources. 
 
 Seuraavaksi kopioin julkisen avaimen komennolla sudo cp public /etc/apt/keyrings/salt-archive-keyring.pgp sekä salt.sources -tiedoston komennolla sudo cp salt.sources /etc/apt/sources.list.d/. Nämä siksi, että Saltin paketit voidaan hakea ja varmentaa automaattisesti.
 Tämän jälkeen päivitin komennolla sudo apt-get update ja asensin Saltin komennolla sudo apt-get install salt-minion salt-master. Seuraavaksi tarkistin komennolla sudo salt-call --version, että asennus onnistui. 
