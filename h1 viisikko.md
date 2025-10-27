@@ -14,3 +14,10 @@ Saltia käytetään usean slave-koneen hallintaan. Salt-komentoja ajetaan paikal
 Slave-koneita voi hallita palomuurin tai NAT:in takaa, myös tuntemattomassa osoitteessa. Master-koneella, jolla slave-koneita hallitaan, tarvitsee olla julkinen palvelin sekä osoite. Eri slave-koneille lisätään eri id, jotta jokainen tunnistetaan yksilöllisesti. Lopuksi master-koneella hyväksytään slave-avain.
 
 •	Karvinen 2006: Raportin kirjoittaminen
+
+Toistettavuus 
+Kuka tahansa voi toistaa työn samassa ympäristössä samalla lopputuloksella.
+Täsmällisyys
+Työvaiheet tulee kertoa tarkasti, millä komennolla ja milloin. 
+Onnistumiset ja epäonnistumiset tulee kirjata ylös.
+Raportin kirjoitus menneessä aikamuodossa.
