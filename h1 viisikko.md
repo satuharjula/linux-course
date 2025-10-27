@@ -80,26 +80,26 @@ Seuraavaksi tarkistin komennolla sudo salt-call --version, että asennus onnistu
 
 ### pkg-tilafunktio
 
-Ajoin komennon sudo salt-call –local -l info state.single pkg.installed tree. Tuloksessa True ja Changes-kohdassa näkyi, että paketti tree asennettiin. Succeeded näytti 1 (changed=1), eli toimenpide onnistui.
+Ajoin komennon sudo salt-call –local -l info state.single pkg.installed tree. (Karvinen 28.10.2021) Tuloksessa True ja Changes-kohdassa näkyi, että paketti tree asennettiin. Succeeded näytti 1 (changed=1), eli toimenpide onnistui.
 <img width="541" height="277" alt="image" src="https://github.com/user-attachments/assets/54ee41e7-fc1d-40c9-8912-8ee8adc2af98" />
 
 ### file-tilafunktio
 
-Ajoin komennon sudo salt-call - -local state.single file.managed /tmp/kokeilu, joka varmisti, että tiedosto on olemassa. Tuloksessa True ja Changes-kohdassa näkyi, että tiedosto /tmp/kokeilu luotiin. Succeeded näytti 1 (changed=1), eli toimenpide teki muutoksen ja se onnistui.
+Ajoin komennon sudo salt-call - -local state.single file.managed /tmp/kokeilu, joka varmisti, että tiedosto on olemassa. (Karvinen 28.10.2021) Tuloksessa True ja Changes-kohdassa näkyi, että tiedosto /tmp/kokeilu luotiin. Succeeded näytti 1 (changed=1), eli toimenpide teki muutoksen ja se onnistui.
 <img width="544" height="377" alt="image" src="https://github.com/user-attachments/assets/47bb9ea0-4836-4b05-acf2-bc269f51f71d" />
 
 ### service-tilafunktio 
 
-Ajoin komennon sudo salt-call --local -l info state.single service.running apache2 enable=True. Tulosteessa oli Result: False ja ”The named sarvice apache2 is not available”. Komento ei toiminut, koska apache2 ei ole asennettu virtuaalikoneelleni.
+Ajoin komennon sudo salt-call --local -l info state.single service.running apache2 enable=True. (Karvinen 28.10.2021) Tulosteessa oli Result: False ja ”The named sarvice apache2 is not available”. Komento ei toiminut, koska apache2 ei ole asennettu virtuaalikoneelleni.
 <img width="609" height="228" alt="image" src="https://github.com/user-attachments/assets/756818b0-533c-46af-96f9-ff11f6afb642" />
 
 ### user-tilafunktio
-Ajoin komennon sudo salt-call --local -l info state.single user.present satu. Tuloksessa lukee ”User satu is present and up to date”, eli käyttäjä on jo olemassa, joten Salt ei tehnyt muutoksia ja siksi Changes -kohta on tyhjä. Tämä on hyvä esimerkki idempotenssista
+Ajoin komennon sudo salt-call --local -l info state.single user.present satu. (Karvinen 28.10.2021) Tuloksessa lukee ”User satu is present and up to date”, eli käyttäjä on jo olemassa, joten Salt ei tehnyt muutoksia ja siksi Changes -kohta on tyhjä. 
 <img width="547" height="188" alt="image" src="https://github.com/user-attachments/assets/b43e9c2a-2cd8-4843-b9b5-d51a10fbbd84" />
 
 ### cmd-tilafunktio
 
-Ajoin komennon sudo salt-call --local -l info state.single cmd.run 'touch /tmp/test' creates="/tmp/test". Tuloksessa “Result: True” kertoi, että ajo onnistui. “Changes” näytti, että komento ajettiin ja tiedosto /tmp/test luotiin.
+Ajoin komennon sudo salt-call --local -l info state.single cmd.run 'touch /tmp/test' creates="/tmp/test". (Karvinen 28.10.2021)Tuloksessa “Result: True” kertoi, että ajo onnistui. “Changes” näytti, että komento ajettiin ja tiedosto /tmp/test luotiin.
 <img width="529" height="264" alt="image" src="https://github.com/user-attachments/assets/cadbe002-c69c-4094-aada-f12b389e56ce" />
 
 ## Idempotentti
@@ -115,7 +115,7 @@ Karvinen, T. 20.10.2025. Install Salt on Debian 13 Trixie. Luettavissa: https://
 
 Karvinen, T. 28.10.2021. Run Salt Command Locally. Luettavissa: https://terokarvinen.com/2021/salt-run-command-locally/. Luettu: 26.10.2025.
 
-Karvinen, T. 2018. Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux. Luettavissa: https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/. Luettu: 26.10.2025. 
+Karvinen, T. 28.3.2018. Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux. Luettavissa: https://terokarvinen.com/2018/03/28/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/. Luettu: 26.10.2025. 
 
 SALT PROJECT 2025. Linux (DEB). Luettavissa: https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/linux-deb.html. Luettu: 24.10.2025.
 
