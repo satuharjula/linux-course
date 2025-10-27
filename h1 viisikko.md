@@ -26,6 +26,13 @@ Slave-koneita voi hallita palomuurin tai NAT:in takaa, myös tuntemattomassa oso
 	Onnistumiset ja epäonnistumiset tulee kirjata ylös.
     Raportin kirjoitus menneessä aikamuodossa.
 
+•	Helppulukuisuus
+
+    Väliotsikoiden käyttö
+    Huolellinen kieli
+    Halutessaan myös tiivistelmä raportin alkuun
+
+
 
 
 
