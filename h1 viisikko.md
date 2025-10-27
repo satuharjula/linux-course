@@ -86,6 +86,7 @@ Ajoin komennon sudo salt-call –local -l info state.single pkg.installed tree. 
 ### file-tilafunktio
 
 Ajoin komennon sudo salt-call - -local state.single file.managed /tmp/kokeilu, joka varmisti, että tiedosto on olemassa. (Karvinen 28.10.2021) Tuloksessa True ja Changes-kohdassa näkyi, että tiedosto /tmp/kokeilu luotiin. Succeeded näytti 1 (changed=1), eli toimenpide teki muutoksen ja se onnistui.
+
 <img width="544" height="377" alt="image" src="https://github.com/user-attachments/assets/47bb9ea0-4836-4b05-acf2-bc269f51f71d" />
 
 ### service-tilafunktio 
