@@ -106,6 +106,7 @@ Ajoin komennon sudo salt-call --local -l info state.single cmd.run 'touch /tmp/t
 ## Idempotentti
 
 Ajoin sudo salt-call --local -l info state.single user.present satu kahdesti. (Karvinen 2021) Ensimmäinen ajo varmisti käyttäjän, toisella ajolla Salt ilmoitti “User satu is present and up to date” ja Changes oli tyhjä. Tämä osoittaa idempotenssin, eli sama tila ei tee turhaa muutosta, kun se on jo oikein.
+
 <img width="547" height="188" alt="image" src="https://github.com/user-attachments/assets/2bcd15bb-d51a-473f-ad41-7627eac733be" />
 
 ## Lähteet
