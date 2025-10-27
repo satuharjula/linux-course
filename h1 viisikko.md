@@ -32,6 +32,11 @@ Slave-koneita voi hallita palomuurin tai NAT:in takaa, myös tuntemattomassa oso
     Huolellinen kieli
     Halutessaan myös tiivistelmä raportin alkuun
 
+•	Lähdeviitteet
+
+•	Plagiointi, sepittäminen ja luvaton kuvien kopiointi ehdottomasti kielletty.
+
+
 
 
 
