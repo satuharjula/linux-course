@@ -1,10 +1,8 @@
 # h1 - Viisikko
 
-Tekijä: Satu Harjula
-
 
 ## Tiivistelmä
-## Karvinen 2025: Install Salt on Debian 13 Trixie:
+### Karvinen 2025: Install Salt on Debian 13 Trixie:
 
 Saltin asentaminen Debian 13:een vaatii APT-paketin arkiston, jonka kautta Saltin paketit voidaan hakea ja varmentaa. Arkisto sisältää PGP-avaimen, jolla varmennetaan pakettien allekirjoitukset, sekä sources.list-tiedoston, josta julkinen avain löytyy.
 
