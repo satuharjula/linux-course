@@ -50,8 +50,26 @@ ja salt.sources-tiedoston komennolla:
 
 wget https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources. 
 
-Seuraavaksi kopioin julkisen avaimen komennolla sudo cp public /etc/apt/keyrings/salt-archive-keyring.pgp sekä salt.sources -tiedoston komennolla sudo cp salt.sources /etc/apt/sources.list.d/. Nämä siksi, että Saltin paketit voidaan hakea ja varmentaa automaattisesti.
-Tämän jälkeen päivitin komennolla sudo apt-get update ja asensin Saltin komennolla sudo apt-get install salt-minion salt-master. Seuraavaksi tarkistin komennolla sudo salt-call --version, että asennus onnistui. 
+Seuraavaksi kopioin julkisen avaimen komennolla:
+
+sudo cp public /etc/apt/keyrings/salt-archive-keyring.pgp
+
+sekä salt.sources -tiedoston komennolla:
+
+sudo cp salt.sources /etc/apt/sources.list.d/. 
+
+Nämä siksi, että Saltin paketit voidaan hakea ja varmentaa automaattisesti.
+
+
+Tämän jälkeen päivitin komennolla:
+
+sudo apt-get update
+
+ja asensin Saltin komennolla:
+
+sudo apt-get install salt-minion salt-master. 
+
+Seuraavaksi tarkistin komennolla sudo salt-call --version, että asennus onnistui. 
 
 <img width="608" height="73" alt="image" src="https://github.com/user-attachments/assets/7ec99b4f-dc8e-4a28-a55c-276724584c5d" />
 
