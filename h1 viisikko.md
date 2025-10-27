@@ -41,8 +41,10 @@ Tehtävässä mukailtu (Karvinen 2025) ohjeita.
 
 ### PGP-julkisen avaimen ja salt sources -tiedoston lataus
 Aloitin tehtävän asentamalla wget:in, jotta saan ladattua tarvittavat tiedostot. 
+
 Latasin wget:in komennoilla sudo apt-get update ja sudo apt-get install wget.
-Seuraavaksi loin uuden kansion komennolla mkdir saltrepo/ ja siirryin siihen komennolla cd saltrepo/.
+
+Jonka jälkeen loin uuden kansion komennolla mkdir saltrepo/ ja siirryin siihen komennolla cd saltrepo/.
 
 Seuraavaksi latasin PGP-julkisen avaimen komennolla: 
 
