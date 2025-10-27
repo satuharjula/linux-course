@@ -50,9 +50,7 @@ ja salt.sources-tiedoston komennolla:
 
 wget https://github.com/saltstack/salt-install-guide/releases/latest/download/salt.sources. 
 
-Seuraavaksi kopioin julkisen avaimen komennolla:
-
-sudo cp public /etc/apt/keyrings/salt-archive-keyring.pgp
+Seuraavaksi kopioin julkisen avaimen komennolla: sudo cp public /etc/apt/keyrings/salt-archive-keyring.pgp
 
 sekä salt.sources -tiedoston komennolla:
 
