@@ -51,12 +51,12 @@ Tämän jälkeen päivitin komennolla sudo apt-get update ja asensin Saltin kome
 
 ### pkg-tilafunktio
 
-Ajoin komennon sudo salt-call –local -l info state.single pkg.installed tree.
+Ajoin komennon sudo salt-call –local -l info state.single pkg.installed tree. Tuloksessa True ja Changes-kohdassa näkyi, että paketti tree asennettiin. Succeeded näytti 1 (changed=1), eli toimenpide onnistui.
 <img width="541" height="277" alt="image" src="https://github.com/user-attachments/assets/54ee41e7-fc1d-40c9-8912-8ee8adc2af98" />
 
 ### file-tilafunktio
 
-Ajoin komennon sudo salt-call - -local state.single file.managed /tmp/kokeilu, joka varmisti, että tiedosto on olemassa. 
+Ajoin komennon sudo salt-call - -local state.single file.managed /tmp/kokeilu, joka varmisti, että tiedosto on olemassa. Tuloksessa True ja Changes-kohdassa näkyi, että tiedosto /tmp/kokeilu luotiin. Succeeded näytti 1 (changed=1), eli toimenpide teki muutoksen ja se onnistui.
 <img width="544" height="377" alt="image" src="https://github.com/user-attachments/assets/47bb9ea0-4836-4b05-acf2-bc269f51f71d" />
 
 ### service-tilafunktio 
