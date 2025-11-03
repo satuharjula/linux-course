@@ -80,6 +80,7 @@ Lisäsin tiedostoon vielä sisältöä, eli menin uudestaan editoriin komennolla
 <img width="315" height="158" alt="image" src="https://github.com/user-attachments/assets/f1eb4172-1122-4d58-a4e7-ab0194225376" />
 
 Ajoin uudestaan komennon sudo salt-call –local state.apply hellofile.
+
 <img width="638" height="352" alt="image" src="https://github.com/user-attachments/assets/c857ea60-25e0-4fe0-8e52-5af94c35dee0" />
 
 Tuloste vahvisti onnistumisen rivillä File /tmp/hello.file.txt updated, eli Salt havaitsi muutoksen ja toteutti sen.
@@ -87,18 +88,22 @@ Tuloste vahvisti onnistumisen rivillä File /tmp/hello.file.txt updated, eli Sal
 ### service-tilafunktio: 
 
 Siirryin helloservice-hakemistoon komennolla cd /srv/salt/helloservice ja siitä editoriin komennolla sudoedit init.sls.
+
 <img width="563" height="133" alt="image" src="https://github.com/user-attachments/assets/61027f4f-d95b-4d06-9f87-1f7db3a6478c" />
 
 Tämän jälkeen asensin OpenSSH-palvelimen komennoilla sudo apt update ja sudo apt install -y openssh-server. 
 Seuraavaksi ajoin komennon sudo salt-call –local state.apply helloservice.
+
 <img width="449" height="238" alt="image" src="https://github.com/user-attachments/assets/339b7e27-3cc2-4de7-96c1-20c8ecdc9d23" />
 
 ### user-tilafunktio:
 
 Siirryin hakemistoon komennolla cd  /srv/salt/hellouser, jonka jälkeen editoriin komennolla sudoedit init.sls.
+
 <img width="289" height="167" alt="image" src="https://github.com/user-attachments/assets/ecadfc7a-bbdc-41ee-a25c-2f07ff612888" />
 
 Seuraavaksi ajoin komennon sudo salt-call –local state.apply hellouser.
+
 <img width="485" height="403" alt="image" src="https://github.com/user-attachments/assets/b234bc4e-a8ff-4a9d-ab7e-cd7d0dd40d58" />
 
 ###  CMDDDDD
@@ -107,16 +112,20 @@ Seuraavaksi ajoin komennon sudo salt-call –local state.apply hellouser.
 ## Kahden tilafunktion SLS
 
 Aloitin luomalla uuden kansion komennolla sudo mkdir -p /srv/salt/apache ja siirryin tähän kansioon komennolla cd /srv/salt/apache. Seuraavaksi siirryin editoriin komennolla sudoedit init.sls.
+
 <img width="302" height="197" alt="image" src="https://github.com/user-attachments/assets/9d2d4c4c-3b2c-4b29-860b-3a66a447c8bc" />
 
 Ajoin komennon  sudo salt-call –local state.apply apache.
+
 <img width="626" height="521" alt="image" src="https://github.com/user-attachments/assets/9441b2ee-cc6e-4e49-9a5c-e512d3494182" />
 <img width="634" height="796" alt="image" src="https://github.com/user-attachments/assets/aca7201b-d8e7-4e5e-a480-5acf49eebbee" />
 
 Testasin vielä useamman kerran komennolla sudo salt-call --local state.apply apache, että sls-tiedostoni on idempotenssi. 
+
 <img width="634" height="403" alt="image" src="https://github.com/user-attachments/assets/297b4e96-ac4c-48df-9ccd-ba744fecb563" />
 
 Testasin vielä, että Apache on käynnissä ja käynnistyy myös automaattisesti. Käytin komentoa  systemctl is-active apache2 && systemctl is-enabled apache2. Komennolla curl -I http://localhost/ | head -n1 testasin, että apache vastaa http-pyyntöihin. (Red Hat Documentation 2025)
+
 <img width="614" height="63" alt="image" src="https://github.com/user-attachments/assets/d58c004d-a5f5-4a38-b8b2-f942920c1a83" />
 
 
