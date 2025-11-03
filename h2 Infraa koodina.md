@@ -47,7 +47,7 @@ Tarkistin vielä komennolla cat /tmp/hellosatu, että tiedosto oli olemassa ja s
 ## Top-file: kaikkien tilojen ajaminen yhdellä komennolla
 
 Aloitin ajamalla komennon sudoedit /srv/salt/top.sls, jolloin editori avautui ja lisäsin sinne seuraavat kohdat:
-<img width="584" height="315" alt="image" src="https://github.com/user-attachments/assets/56c3ac45-34a5-411b-a0b2-13c622549754" />
+<img width="584" height="315" alt="image" src="https://github.com/user-attachments/assets/56c3ac45-34a5-411b-a0b2-13c622549754" /> (Salt project 2025)
 
 Tämän jälkeen tallensin ja suljin editorin. Testasin ensin yhden tilan ajamalla sudo salt-call --local state.apply hello, joka toimi.
 <img width="632" height="309" alt="image" src="https://github.com/user-attachments/assets/5de65ecf-1ee7-4f6b-817a-5cacec375e35" />
@@ -64,7 +64,7 @@ Aloitin luomalla kansiot jokaiselle viidelle tilafunktiolle komennolla sudo mkdi
 ### pkg-tilafunktio:
 
 Siirryin hellopkg-hakemistoon komennolla cd /srv/salt/hellopkg, jonka jälkeen ajoin komennon sudoedit init.sls, joka siirsi minut editoriin.
-<img width="491" height="208" alt="image" src="https://github.com/user-attachments/assets/576d5e78-623a-49cb-adcf-c2d123da68ec" />
+<img width="491" height="208" alt="image" src="https://github.com/user-attachments/assets/576d5e78-623a-49cb-adcf-c2d123da68ec" /> (Salt project 2025)
 
 Seuraavaksi ajoin komennon sudo salt-call --local state.apply hellopkg
 <img width="635" height="326" alt="image" src="https://github.com/user-attachments/assets/be810d9d-2b47-427d-b04c-d15e98710153" />
@@ -142,7 +142,9 @@ Testasin vielä, että Apache on käynnissä ja käynnistyy myös automaattisest
 
 ## Lähteet:
 
-Salt project 2025. Salt.states.pkg. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html. 
+Red Hat Documentation 2025 . Chapter 11. Managing systemd. Luettavissa: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/managing-systemd_configuring-basic-system-settings. 
 Salt project 2025. How do I use salt states. Luettavissa: https://docs.saltproject.io/en/3006/topics/tutorials/starting_states.html.
+Salt Project 2025. Salt overview. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml.  
+Salt project 2025. Salt.states.pkg. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html. 
 
 
