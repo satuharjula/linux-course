@@ -91,7 +91,7 @@ Tuloste vahvisti onnistumisen rivillä File /tmp/hello.file.txt updated, eli Sal
 
 Siirryin helloservice-hakemistoon komennolla cd /srv/salt/helloservice ja siitä editoriin komennolla sudoedit init.sls.
 
-<img width="563" height="133" alt="image" src="https://github.com/user-attachments/assets/61027f4f-d95b-4d06-9f87-1f7db3a6478c" />
+<img width="563" height="133" alt="image" src="https://github.com/user-attachments/assets/61027f4f-d95b-4d06-9f87-1f7db3a6478c" /> (Salt project 2025)
 
 Tämän jälkeen asensin OpenSSH-palvelimen komennoilla sudo apt update ja sudo apt install -y openssh-server. 
 Seuraavaksi ajoin komennon sudo salt-call –local state.apply helloservice.
@@ -100,9 +100,9 @@ Seuraavaksi ajoin komennon sudo salt-call –local state.apply helloservice.
 
 ### user-tilafunktio:
 
-Siirryin hakemistoon komennolla cd  /srv/salt/hellouser, jonka jälkeen editoriin komennolla sudoedit init.sls.
+Siirryin hakemistoon komennolla cd /srv/salt/hellouser, jonka jälkeen editoriin komennolla sudoedit init.sls.
 
-<img width="289" height="167" alt="image" src="https://github.com/user-attachments/assets/ecadfc7a-bbdc-41ee-a25c-2f07ff612888" />
+<img width="289" height="167" alt="image" src="https://github.com/user-attachments/assets/ecadfc7a-bbdc-41ee-a25c-2f07ff612888" /> (Salt project 2025)
 
 Seuraavaksi ajoin komennon sudo salt-call –local state.apply hellouser.
 
@@ -112,7 +112,7 @@ Seuraavaksi ajoin komennon sudo salt-call –local state.apply hellouser.
 
 Siirryin hakemistoon komennolla cd  /srv/salt/hellocmd, jonka jälkeen editoriin komennolla sudoedit init.sls.
 
-<img width="413" height="159" alt="image" src="https://github.com/user-attachments/assets/c22f9c1c-751e-47de-b1c5-9213a75676d5" />
+<img width="413" height="159" alt="image" src="https://github.com/user-attachments/assets/c22f9c1c-751e-47de-b1c5-9213a75676d5" /> (Salt project 2025)
 
 Seuraavaksi ajoin komennon sudo salt-call –local state.apply hellocmd.
 
@@ -145,7 +145,10 @@ Testasin vielä, että Apache on käynnissä ja käynnistyy myös automaattisest
 Red Hat Documentation 2025 . Chapter 11. Managing systemd. Luettavissa: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/managing-systemd_configuring-basic-system-settings. 
 Salt project 2025. How do I use salt states. Luettavissa: https://docs.saltproject.io/en/3006/topics/tutorials/starting_states.html.
 Salt Project 2025. Salt overview. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml.
+Salt project 2025. Salt.states.cmd. Luettavissa: https://docs.saltproject.io/en/3007/ref/states/all/salt.states.cmd.html.
 Salt project 2025. Salt.states.file. Luettavissa: https://docs.saltproject.io/en/3006/ref/states/all/salt.states.file.html.
-Salt project 2025. Salt.states.pkg. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html. 
+Salt project 2025. Salt.states.pkg. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html.
+Salt project 2025. Salt.states.service. Luettavissa: https://docs.saltproject.io/en/3007/ref/states/all/salt.states.service.html.
+Salt project 2025. Salt.states.user. Luettavissa: https://docs.saltproject.io/en/3007/ref/states/all/salt.states.user.html.
 
 
