@@ -108,6 +108,16 @@ Seuraavaksi ajoin komennon sudo salt-call –local state.apply hellouser.
 
 ###  CMDDDDD
 
+Siirryin hakemistoon komennolla cd  /srv/salt/hellocmd, jonka jälkeen editoriin komennolla sudoedit init.sls.
+
+<img width="413" height="159" alt="image" src="https://github.com/user-attachments/assets/c22f9c1c-751e-47de-b1c5-9213a75676d5" />
+
+Seuraavaksi ajoin komennon sudo salt-call –local state.apply hellocmd.
+
+<img width="634" height="381" alt="image" src="https://github.com/user-attachments/assets/70eeb64b-2eec-407d-bb05-e463c2a7acb5" />
+
+
+
 
 ## Kahden tilafunktion SLS
 
