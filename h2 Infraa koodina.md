@@ -106,7 +106,7 @@ Seuraavaksi ajoin komennon sudo salt-call –local state.apply hellouser.
 
 <img width="485" height="403" alt="image" src="https://github.com/user-attachments/assets/b234bc4e-a8ff-4a9d-ab7e-cd7d0dd40d58" />
 
-###  CMDDDDD
+### cmd-tilafunktio
 
 Siirryin hakemistoon komennolla cd  /srv/salt/hellocmd, jonka jälkeen editoriin komennolla sudoedit init.sls.
 
@@ -123,7 +123,7 @@ Seuraavaksi ajoin komennon sudo salt-call –local state.apply hellocmd.
 
 Aloitin luomalla uuden kansion komennolla sudo mkdir -p /srv/salt/apache ja siirryin tähän kansioon komennolla cd /srv/salt/apache. Seuraavaksi siirryin editoriin komennolla sudoedit init.sls.
 
-<img width="302" height="197" alt="image" src="https://github.com/user-attachments/assets/9d2d4c4c-3b2c-4b29-860b-3a66a447c8bc" />
+<img width="302" height="197" alt="image" src="https://github.com/user-attachments/assets/9d2d4c4c-3b2c-4b29-860b-3a66a447c8bc" /> (Salt project 2025)
 
 Ajoin komennon  sudo salt-call –local state.apply apache.
 
