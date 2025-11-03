@@ -76,6 +76,7 @@ Seuraavaksi ajoin komennon sudo salt-call --local state.apply hellofile
 <img width="636" height="336" alt="image" src="https://github.com/user-attachments/assets/4153401c-b4c6-41ed-9970-b45626491923" />
 
 Lisäsin tiedostoon vielä sisältöä, eli menin uudestaan editoriin komennolla sudoedit init.sls.
+
 <img width="315" height="158" alt="image" src="https://github.com/user-attachments/assets/f1eb4172-1122-4d58-a4e7-ab0194225376" />
 
 Ajoin uudestaan komennon sudo salt-call –local state.apply hellofile.
