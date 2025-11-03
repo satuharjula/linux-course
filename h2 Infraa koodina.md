@@ -51,6 +51,7 @@ Tämän jälkeen tallensin ja suljin editorin. Testasin ensin yhden tilan ajamal
 <img width="632" height="309" alt="image" src="https://github.com/user-attachments/assets/5de65ecf-1ee7-4f6b-817a-5cacec375e35" />
 
 Seuraavaksi ajoin kaikki topissa listatut tilat komennolla sudo salt-call --local state.apply, ja tuloste vahvisti että tila on kunnossa (“File /tmp/hellosatu is in the correct state”).
+
 <img width="627" height="298" alt="image" src="https://github.com/user-attachments/assets/bf5c8c64-cefa-4a76-b0b4-815e3dff75dd" />
 
 
