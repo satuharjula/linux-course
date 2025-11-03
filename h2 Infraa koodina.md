@@ -24,6 +24,7 @@
 
 Aloitin hakemalla pakettipäivitykset komennolla sudo apt-get update. Sen jälkeen asensin Micro-editorin komennolla sudo apt-get -y install micro. Tämän jälkeen annoin komennon export EDITOR=micro, joka asettaa Micro-editorin oletuseditoriksi. Seuraavaksi loin kansion nimeltä hello polkuun /srv/salt/ komennolla sudo mkdir -p /srv/salt/hello, ja siirryin kansioon komennolla cd /srv/salt/hello.
 <img width="559" height="97" alt="image" src="https://github.com/user-attachments/assets/01549349-bcea-4830-8781-e872af682a8e" />
+
 Seuraavaksi ajoin komennon sudoedit init.sls, joka avasi Micro-editorin, jonka juuri asensin. Lisäsin editoriin seuraavat asiat: 
 <img width="408" height="314" alt="image" src="https://github.com/user-attachments/assets/65cd75ec-87b9-48bc-a290-c5775b2f7c01" />
 Ajoin komennon sudo salt-call --local state.apply hello, joka tulosti kuvan mukaisen yhteenvedon:
