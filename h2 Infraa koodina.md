@@ -144,11 +144,17 @@ Testasin vielä, että Apache on käynnissä ja käynnistyy myös automaattisest
 
 Red Hat Documentation 2025 . Chapter 11. Managing systemd. Luettavissa: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_basic_system_settings/managing-systemd_configuring-basic-system-settings. 
 Salt project 2025. How do I use salt states. Luettavissa: https://docs.saltproject.io/en/3006/topics/tutorials/starting_states.html.
+
 Salt Project 2025. Salt overview. Luettavissa: https://docs.saltproject.io/salt/user-guide/en/latest/topics/overview.html#rules-of-yaml.
+
 Salt project 2025. Salt.states.cmd. Luettavissa: https://docs.saltproject.io/en/3007/ref/states/all/salt.states.cmd.html.
+
 Salt project 2025. Salt.states.file. Luettavissa: https://docs.saltproject.io/en/3006/ref/states/all/salt.states.file.html.
+
 Salt project 2025. Salt.states.pkg. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html.
+
 Salt project 2025. Salt.states.service. Luettavissa: https://docs.saltproject.io/en/3007/ref/states/all/salt.states.service.html.
+
 Salt project 2025. Salt.states.user. Luettavissa: https://docs.saltproject.io/en/3007/ref/states/all/salt.states.user.html.
 
 
