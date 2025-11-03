@@ -158,4 +158,6 @@ Salt project 2025. Salt.states.service. Luettavissa: https://docs.saltproject.io
 
 Salt project 2025. Salt.states.user. Luettavissa: https://docs.saltproject.io/en/3007/ref/states/all/salt.states.user.html.
 
+Karvinen, T. 3.4.2024. Hello Salt Infra-as-Code. Luettavissa: https://terokarvinen.com/2024/hello-salt-infra-as-code/. 
+
 
