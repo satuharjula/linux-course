@@ -68,6 +68,7 @@ Siirryin hellopkg-hakemistoon komennolla cd /srv/salt/hellopkg, jonka jälkeen a
 
 Seuraavaksi ajoin komennon sudo salt-call --local state.apply hellopkg
 <img width="635" height="326" alt="image" src="https://github.com/user-attachments/assets/be810d9d-2b47-427d-b04c-d15e98710153" />
+Salt tarkisti, onko htop jo asennettu. Ei ollut, joten asensi sen.
 
 ### file-tilafunktio:
 
@@ -98,6 +99,8 @@ Seuraavaksi ajoin komennon sudo salt-call –local state.apply helloservice.
 
 <img width="449" height="238" alt="image" src="https://github.com/user-attachments/assets/339b7e27-3cc2-4de7-96c1-20c8ecdc9d23" />
 
+Tulosteessa näkyi, että palvelu oli jo valmiiksi käytössä, joten Salt ei tehny muutoksia. 
+
 ### user-tilafunktio:
 
 Siirryin hakemistoon komennolla cd /srv/salt/hellouser, jonka jälkeen editoriin komennolla sudoedit init.sls.
@@ -107,6 +110,8 @@ Siirryin hakemistoon komennolla cd /srv/salt/hellouser, jonka jälkeen editoriin
 Seuraavaksi ajoin komennon sudo salt-call –local state.apply hellouser.
 
 <img width="485" height="403" alt="image" src="https://github.com/user-attachments/assets/b234bc4e-a8ff-4a9d-ab7e-cd7d0dd40d58" />
+
+Tulosteessa näkyi, että käyttäjä luotiin uid ja gid 1001:llä, kotihakemistolla /home/testi ja shellillä /bin/sh.
 
 ### cmd-tilafunktio
 
@@ -118,7 +123,11 @@ Seuraavaksi ajoin komennon sudo salt-call –local state.apply hellocmd.
 
 <img width="634" height="381" alt="image" src="https://github.com/user-attachments/assets/70eeb64b-2eec-407d-bb05-e463c2a7acb5" />
 
+Tilan komento 'Heii' ajettiin ja tiedosto luotiin. 
 
+Tarkistin vielä sisällön komennolla cat /tmp/once.txt
+
+<img width="446" height="64" alt="image" src="https://github.com/user-attachments/assets/6ee16f0d-0f8a-4961-ae50-e4fbe2527d49" />
 
 
 ## Kahden tilafunktion SLS
