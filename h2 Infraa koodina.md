@@ -22,6 +22,8 @@
 
 ## Infrakoodin kokeileminen paikallisesti
 
+Tehtävässä mukailtu (Tero Karvinen 3.4.2024) ohjeita.
+
 Aloitin hakemalla pakettipäivitykset komennolla sudo apt-get update. Sen jälkeen asensin Micro-editorin komennolla sudo apt-get -y install micro. Tämän jälkeen annoin komennon export EDITOR=micro, joka asettaa Micro-editorin oletuseditoriksi. Seuraavaksi loin kansion nimeltä hello polkuun /srv/salt/ komennolla sudo mkdir -p /srv/salt/hello, ja siirryin kansioon komennolla cd /srv/salt/hello.
 <img width="559" height="97" alt="image" src="https://github.com/user-attachments/assets/01549349-bcea-4830-8781-e872af682a8e" />
 
@@ -138,29 +140,9 @@ Testasin vielä, että Apache on käynnissä ja käynnistyy myös automaattisest
 
 <img width="614" height="63" alt="image" src="https://github.com/user-attachments/assets/d58c004d-a5f5-4a38-b8b2-f942920c1a83" />
 
+## Lähteet:
 
-
-
-
-
-
-
-
-
-
-
-
-
-(Salt project 2025)
-
-
-
-
-
-
-
-
-Lähteet:
-Salt project 2025. Salt.states.pkg. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html.
+Salt project 2025. Salt.states.pkg. Luettavissa: https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html. 
+Salt project 2025. How do I use salt states. Luettavissa: https://docs.saltproject.io/en/3006/topics/tutorials/starting_states.html.
 
 
