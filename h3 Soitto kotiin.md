@@ -71,6 +71,73 @@ Kokeilin vielä yhteyttä Internetiin ja sekin onnistui.
 
 ## Salt-master asennus
 
+Ajoin komennon vagrant up, jonka jälkeen muodostin ssh-yhteyden t001. Loin kansion keyrings komennolla mkdir -p /etc/apt/keyrings. Ajoin komennon sudo apt-get update, jonka jälkeen asensin curl:in komennolla sudo apt-get install curl.
+Tämän jälkeen latasin ja lisäsin julkisen avaimen seuraavalla komennolla:
+
+<img width="1004" height="68" alt="image" src="https://github.com/user-attachments/assets/be0238a7-a88b-4c10-80ae-8b725445989e" />
+
+Lisäsin Saltin pakettivaraston APT:n lähdeluetteloon.
+
+<img width="958" height="69" alt="image" src="https://github.com/user-attachments/assets/68f2ede0-5eff-4006-a77a-0e24ab1f8efc" />
+
+Seuraavaksi ajoin komennon sudo apt-get update, jonka jälkeen asensin salt-masterin komennolla sudo apt-get -y install salt-master.
+
+<img width="969" height="492" alt="image" src="https://github.com/user-attachments/assets/adc658df-ac3b-4166-aa6d-d1aa9c776c2b" />
+
+Se onnistui. 
+
+## Salt-minion asennus
+
+Muodostin ssh-yheyden t002. Ajoin komennon sudo apt-get update, jonka jälkeen asensin curl:in komennolla sudo apt-get install curl.
+Seuraavaksi loin kansion keyrings, komennolla mkdir -p /etc/apt/keyrings.
+Sitten latasin ja lisäsin julkisen avaimen seuraavalla komennolla:
+
+<img width="1004" height="48" alt="image" src="https://github.com/user-attachments/assets/75cdce5a-2fd7-4b84-99bf-8901746a7058" />
+
+Lisäsin Saltin pakettivaraston APT:n lähdeluetteloon.
+
+<img width="1004" height="128" alt="image" src="https://github.com/user-attachments/assets/16331741-7ec1-4419-af2b-5c3a9440d97a" />
+
+Seuraavaksi ajoin komennon sudo apt-get update, jonka jälkeen asensin salt-minionin komennolla sudo apt-get -y install salt-minion.
+
+<img width="969" height="778" alt="image" src="https://github.com/user-attachments/assets/7a7b584a-ead6-4758-b16b-2e84e3c82b08" />
+
+Se onnistui. 
+
+<img width="969" height="778" alt="image" src="https://github.com/user-attachments/assets/17445fb4-0c0c-4508-9f3d-8fe45d47d2c9" />
+
+Seuraavaksi ajoin komennon sudoedit /etc/salt/minion, joka avasi minulle Saltin asetustiedoston. Muokkasin tiedostossa kohtaa #master: salt. Muutin sen näyttämään tältä:
+
+<img width="1004" height="643" alt="image" src="https://github.com/user-attachments/assets/3eb3f141-ce87-4119-954f-c59227a6c917" />
+
+Tallensin muutokset ja käynnistin minionin uudelleen komennolla sudo systemctl restart salt-minion. 
+Tarkistin vielä minionin tilan seuraavasti:
+
+<img width="1004" height="363" alt="image" src="https://github.com/user-attachments/assets/8f7a8ee5-fdc3-45fb-b835-d1c7b0563ba2" />
+
+Seuraavaksi palasin masterille (t001) hyväksymään avaimen.
+
+<img width="695" height="209" alt="image" src="https://github.com/user-attachments/assets/6a584467-7bca-41e2-8bde-ba949c56d8b0" />
+
+Kokeilin seuraavaa komentoa ja sain vastauksen minionilta.
+
+<img width="695" height="125" alt="image" src="https://github.com/user-attachments/assets/ae601539-6c60-454e-86ef-9159582609ec" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
