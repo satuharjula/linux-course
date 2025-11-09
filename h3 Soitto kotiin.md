@@ -71,6 +71,8 @@ Kokeilin vielä yhteyttä Internetiin ja sekin onnistui.
 
 ## Salt-master asennus
 
+Tehtävässä mukailtu (Tero Karvinen 2018) ohjeita.
+
 Ajoin komennon vagrant up, jonka jälkeen muodostin ssh-yhteyden t001. Loin kansion keyrings komennolla mkdir -p /etc/apt/keyrings. Ajoin komennon sudo apt-get update, jonka jälkeen asensin curl:in komennolla sudo apt-get install curl.
 Tämän jälkeen latasin ja lisäsin julkisen avaimen seuraavalla komennolla:
 
@@ -78,7 +80,7 @@ Tämän jälkeen latasin ja lisäsin julkisen avaimen seuraavalla komennolla:
 
 Lisäsin Saltin pakettivaraston APT:n lähdeluetteloon.
 
-<img width="958" height="69" alt="image" src="https://github.com/user-attachments/assets/68f2ede0-5eff-4006-a77a-0e24ab1f8efc" />
+<img width="958" height="69" alt="image" src="https://github.com/user-attachments/assets/68f2ede0-5eff-4006-a77a-0e24ab1f8efc" /> (Salt project.io 2024)
 
 Seuraavaksi ajoin komennon sudo apt-get update, jonka jälkeen asensin salt-masterin komennolla sudo apt-get -y install salt-master.
 
@@ -88,6 +90,8 @@ Se onnistui.
 
 ## Salt-minion asennus
 
+Tehtävässä mukailtu (Tero Karvinen 2018) ohjeita.
+
 Muodostin ssh-yheyden t002. Ajoin komennon sudo apt-get update, jonka jälkeen asensin curl:in komennolla sudo apt-get install curl.
 Seuraavaksi loin kansion keyrings, komennolla mkdir -p /etc/apt/keyrings.
 Sitten latasin ja lisäsin julkisen avaimen seuraavalla komennolla:
@@ -96,7 +100,7 @@ Sitten latasin ja lisäsin julkisen avaimen seuraavalla komennolla:
 
 Lisäsin Saltin pakettivaraston APT:n lähdeluetteloon.
 
-<img width="1004" height="128" alt="image" src="https://github.com/user-attachments/assets/16331741-7ec1-4419-af2b-5c3a9440d97a" />
+<img width="1004" height="128" alt="image" src="https://github.com/user-attachments/assets/16331741-7ec1-4419-af2b-5c3a9440d97a" /> (Salt project.io 2024)
 
 Seuraavaksi ajoin komennon sudo apt-get update, jonka jälkeen asensin salt-minionin komennolla sudo apt-get -y install salt-minion.
 
@@ -122,6 +126,34 @@ Seuraavaksi palasin masterille (t001) hyväksymään avaimen.
 Kokeilin seuraavaa komentoa ja sain vastauksen minionilta.
 
 <img width="695" height="125" alt="image" src="https://github.com/user-attachments/assets/ae601539-6c60-454e-86ef-9159582609ec" />
+
+## pkg ja service verkon yli
+
+Asensin minionille paketit tree ja apache2 seuraavissa kuvissa näkyvillä komennoilla.
+
+<img width="920" height="711" alt="image" src="https://github.com/user-attachments/assets/176d5263-ca96-449a-85bc-6828a08dbdcd" />
+<img width="1004" height="36" alt="image" src="https://github.com/user-attachments/assets/d6455553-c95c-4b2c-affd-e56ac9eb4d58" />
+<img width="538" height="219" alt="image" src="https://github.com/user-attachments/assets/c4144dee-69c1-4731-b2b9-f6e7e07e31a5" />
+
+Seuraavassa kuvassa näkyvällä komennolla varmistin, että Apache on käynnissä ja käynnistyy bootissa.
+
+<img width="1004" height="444" alt="image" src="https://github.com/user-attachments/assets/63682162-bfb4-45d1-98aa-9f5be9ee911f" />
+
+
+## Lähteet
+
+Karvinen, T. 28.3.2023. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file.
+Karvinen, T. 28.3.2018. Luettavissa: https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux. 
+Karvinen, T. 11.4.2021. Luettavissa: https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/.
+Saltproject.io. 28.10.2024. Luettavissa: https://saltproject.io/blog/salt-project-package-repo-migration-and-guidance/. 
+Vagrant. Install Vagrant. Luettavissa: https://developer.hashicorp.com/vagrant/docs/installation. 
+
+
+
+
+
+
+
 
 
 
