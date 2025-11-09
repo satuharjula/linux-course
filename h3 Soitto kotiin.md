@@ -28,6 +28,7 @@ Asensin AMD64 (Versio: 2.4.9) koneelleni. Kun asennus oli valmis, käynnistin ko
 ## Uusi Linux-virtuaalikone
 
 Loin ensin kansion vagrant-test.
+
 <img width="617" height="217" alt="image" src="https://github.com/user-attachments/assets/8c995c06-d3aa-4ba2-962b-b3dd89e7f241" />
 
 Loin vagrant tiedoston komennolla vagrant init –minimal debian/bookworm64, jonka jälkeen käynnistin virtuaalikoneen komennolla vagrant up.
