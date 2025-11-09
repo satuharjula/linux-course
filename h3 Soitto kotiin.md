@@ -32,6 +32,7 @@ Loin ensin kansion vagrant-test.
 <img width="617" height="217" alt="image" src="https://github.com/user-attachments/assets/8c995c06-d3aa-4ba2-962b-b3dd89e7f241" />
 
 Loin vagrant tiedoston komennolla vagrant init –minimal debian/bookworm64, jonka jälkeen käynnistin virtuaalikoneen komennolla vagrant up.
+
 <img width="886" height="220" alt="image" src="https://github.com/user-attachments/assets/f10bada4-05b4-489d-9d60-ef6b4253a2dc" />
 
 Kirjauduin koneeeseen ssh-yhteydellä.
@@ -49,6 +50,33 @@ Testasin vielä komennolla vagrant status, että virtuaalikone on ylhäällä.
 Tehtävässä mukailtu (Tero Karvinen 2021) ohjeita, soveltaen Windowsille.
 
 Tein uuden kansion nimeltä twohost komennolla mkdir twohost ja siirryinsiihen kansioon cd twohost. Seuraavaksi avasin Vagrantfile-tiedoston muokattavaksi komennolla notepad vagrantfile, ja liitin siihen tarvittavan skriptin.Tallennettuani tiedoston käynnistin molemmat virtuaalikoneet komennolla vagrant up t001 t002.
+
+<img width="897" height="370" alt="image" src="https://github.com/user-attachments/assets/8b7ab7f7-1b7e-47ae-b54a-0116ff0ebb7c" />
+
+Ajoin komennon vagrant status, jolloin näin molempien koneiden olevan käynnissä ja asennuksen onnistuneen.
+
+<img width="993" height="291" alt="image" src="https://github.com/user-attachments/assets/c965f16b-42ca-4a17-9057-2b7342d69626" />
+
+Otin ssh -yhteyden t001 komennolla vagrant ssh t001, jonka jälkeen pingasin toista luomaani konetta t002 komennolla ping -c 1 192.168.88.102.
+
+<img width="996" height="390" alt="image" src="https://github.com/user-attachments/assets/34f52d1b-3a4e-4cce-b33e-c6f740c65cb6" />
+
+Poistuin ssh-yhteydestä t001 exit:llä, jonka jälkeen kokeilin vuorostaan pingata koneella t002 konetta t001. Sekin onnistui.
+
+<img width="988" height="402" alt="image" src="https://github.com/user-attachments/assets/13fc2f54-9e88-4377-9b63-962637a6a84a" />
+
+Kokeilin vielä yhteyttä Internetiin ja sekin onnistui. 
+
+<img width="903" height="206" alt="image" src="https://github.com/user-attachments/assets/3b6a6f92-5dae-489f-b1c5-23ecd79c1bf1" />
+
+## Salt-master asennus
+
+
+
+
+
+
+
 
 
 
