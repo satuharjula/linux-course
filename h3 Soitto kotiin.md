@@ -143,9 +143,13 @@ Seuraavassa kuvassa näkyvällä komennolla varmistin, että Apache on käynniss
 ## Lähteet
 
 Karvinen, T. 28.3.2023. Luettavissa: https://terokarvinen.com/2023/salt-vagrant/#infra-as-code---your-wishes-as-a-text-file.
+
 Karvinen, T. 28.3.2018. Luettavissa: https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux. 
+
 Karvinen, T. 11.4.2021. Luettavissa: https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/.
+
 Saltproject.io. 28.10.2024. Luettavissa: https://saltproject.io/blog/salt-project-package-repo-migration-and-guidance/. 
+
 Vagrant. Install Vagrant. Luettavissa: https://developer.hashicorp.com/vagrant/docs/installation. 
 
 
