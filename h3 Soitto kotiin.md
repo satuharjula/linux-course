@@ -4,7 +4,7 @@
 ## Tiivistelmä
 ### Two Machine Virtual Network With Debian 11 Bullseye and Vagrant
 
-- Vagrantin tehtävä on automatisoida virtuaalikoneiden asennusja SSH-kirjautuminen kokonaan ilman graafista käyttöliittymää.
+- Vagrantin tehtävä on automatisoida virtuaalikoneiden asennus ja SSH-kirjautuminen kokonaan ilman graafista käyttöliittymää.
 - Enää ei käytössä 11-bullseye, vaan debian/bookworm64. (Tero Karvinen 2021)
 
 ### Salt Quickstart – Salt Stack Master and Slave on Ubuntu Linux
